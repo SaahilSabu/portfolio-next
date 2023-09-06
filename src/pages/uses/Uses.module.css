@@ -1,0 +1,110 @@
+.uses {
+  --maxWidthL: var(--maxWidthM);
+  
+}
+
+.section {
+  opacity: 0;
+  padding-top: var(--space2XL);
+  padding-bottom: var(--space2XL);
+  margin-top: var(--space2XL);
+
+  &:global {
+    animation: fadeIn 1s ease 1s forwards;
+  }
+
+  & + & {
+    margin-top: 0;
+  }
+}
+
+.skills {
+  margin: auto;
+  margin-top: -100px;
+}
+.skillContainer {
+  position: relative; /* Add relative position */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skillWrapper{
+  transition: fill 0.3s ease-in-out;
+}
+
+.skillitem {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 2px solid;
+  border-color: #4ECDC4;
+  /* Set initial fill to transparent or any other default color */
+  fill: transparent;
+
+  /* Add transitions for smooth color change */
+  transition: fill 0.3s ease-in-out;
+}
+
+.skillitem:hover {
+ background-color: #4ECDC4;
+ color: rgb(var(--rgbText) / 0.8);
+}
+
+.navIcon {
+  position: absolute;
+  top: 0; /* Set to 0 to align with the bottom of the container */
+  right: 0; /* Set to 0 to align with the right of the container */
+  margin-top: 5rem; /* Adjust margin as needed */
+  margin-right: 2rem;
+  z-index: var(--zIndex2);
+  width: var(--spaceXL);
+  height: var(--spaceXL);
+
+  @media (--mediaMobile), (--mediaMobileLS) {
+    position: absolute;
+    bottom: var(--spaceXL);
+    left: var(--spaceXL);
+    right: unset; /* Reset the right property for mobile */
+  }
+
+  @media (max-width: 820px) and (max-height: 420px) {
+    left: var(--spaceL);
+    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0; /* Adjust if needed */
+  }
+}
+.scrollIndicator {
+  text-align: center;
+  margin-top: 20px; /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust as needed */
+  font-size: 20px;
+  color: gray; /* Adjust the color */
+}
+
+.imgC {
+  --s: 150px;   /* the size of the image */
+  --b: 3px;     /* the border thickness*/
+  --g: 14px;    /* the gap */
+  --c: #4ECDC4; /* the color */
+  
+  width: var(--s);
+  object-fit: cover;
+  aspect-ratio: 1;
+  /* outline: calc(var(--s)/2) solid #0009; */
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: .3s;
+  background-size: cover;
+}
+.imgC:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
