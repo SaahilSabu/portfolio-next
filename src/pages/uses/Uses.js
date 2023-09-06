@@ -1,25 +1,16 @@
 import usesBackgroundPlaceholder from 'assets/uses-background-placeholder.jpg';
 import usesBackground from 'assets/uses-background.mp4';
-import { Footer } from 'components/Footer';
-import { Link } from 'components/Link';
-import { List, ListItem } from 'components/List';
 import { Meta } from 'components/Meta';
-import { Table, TableBody, TableCell, TableHeadCell, TableRow } from 'components/Table';
 import {
   ProjectBackground,
   ProjectContainer,
   ProjectHeader,
   ProjectSection,
-  ProjectSectionContent,
-  ProjectSectionHeading,
-  ProjectSectionText,
-  ProjectTextRow,
 } from 'layouts/Project';
 import { Fragment } from 'react';
 import styles from './Uses.module.css';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-import { VisuallyHidden } from 'components/VisuallyHidden';
 import { Icon } from 'components/Icon';
 import { DecoderText } from 'components/DecoderText';
 

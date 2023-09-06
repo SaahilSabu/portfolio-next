@@ -22,7 +22,6 @@ import volkiharSlide3Large from 'assets/volkihar-slide-3-large.jpg';
 import volkiharSlide3 from 'assets/volkihar-slide-3.jpg';
 import volkiharSlidePlaceholder from 'assets/volkihar-slide-placeholder.jpg';
 import { Button } from 'components/Button';
-import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
 import {

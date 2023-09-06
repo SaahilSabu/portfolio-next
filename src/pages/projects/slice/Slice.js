@@ -21,7 +21,6 @@ import sliceSidebarLayers from 'assets/slice-sidebar-layers.png';
 import sliceSlidesLarge from 'assets/slice-slides-large.jpg';
 import sliceSlidesPlaceholder from 'assets/slice-slides-placeholder.jpg';
 import sliceSlides from 'assets/slice-slides.jpg';
-import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Meta } from 'components/Meta';
 import {

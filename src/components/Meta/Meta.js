@@ -1,6 +1,5 @@
 import Head from 'next/head';
 
-const siteUrl = process.env.NEXT_PUBLIC_WEBSITE_URL;
 const name = 'Saahil Sabu Hameed';
 
 export const Meta = ({ title, description, prefix = name}) => {

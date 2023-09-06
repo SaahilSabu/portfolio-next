@@ -18,7 +18,6 @@ export const ProjectSummary = ({
   index,
   title,
   description,
-  model,
   buttonText,
   buttonLink,
   alternate,
@@ -85,14 +84,16 @@ export const ProjectSummary = ({
     <div className={styles.preview}>
       <div className={styles.icocontainer}>
         <div className={styles.ico}>
-          {ico?.map(src => {
+          {ico?.map((src, key) => {
             return (
               <img
+                key={key}
                 style={cssProps({ opacity: 100 })}
                 data-visible={visible}
                 className={styles.ico_prop}
-                width = {100}
+                width={100}
                 src={src}
+                alt='tech used'
               />
             );
           })}

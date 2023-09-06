@@ -43,7 +43,6 @@ import imageSprStoryboarderDark from 'assets/spr-storyboarder-dark.png';
 import imageSprStoryboarderLightLarge from 'assets/spr-storyboarder-light-large.png';
 import imageSprStoryboarderLightPlaceholder from 'assets/spr-storyboarder-light-placeholder.png';
 import imageSprStoryboarderLight from 'assets/spr-storyboarder-light.png';
-import { Footer } from 'components/Footer';
 import { Image } from 'components/Image';
 import { Link } from 'components/Link';
 import { Meta } from 'components/Meta';
