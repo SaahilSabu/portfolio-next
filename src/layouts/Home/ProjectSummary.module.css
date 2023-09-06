@@ -148,36 +148,16 @@
     opacity: var(--opacity);
   }
 
-  &[data-device='laptop'] {
-    position: absolute;
-    width: 100%;
-    right: -36%;
-    bottom: 24%;
-    transform: translateY(50%);
-
-    @media (--mediaTablet) {
-      width: 80%;
-      right: -10%;
-      bottom: 18%;
-    }
-
-    @media (--mediaMobile) {
-      right: 0;
-    }
+  @media (max-width: 768px) {
+    width: 80%;
+    right: -10%;
+    bottom: 18%;
   }
 
-  &[data-device='phone'] {
-    position: absolute;
-    bottom: 23%;
-    transform: translateY(50%);
-    width: 100%;
-    transition-delay: 800ms;
-
-    @media (--mediaTablet) {
-      width: 80%;
-      bottom: 23%;
-    }
+  @media (max-width: 480px) {
+    right: 0;
   }
+  
 }
 
 .ico {
@@ -193,6 +173,7 @@
   &[data-visible='true'] {
     opacity: 100;
   }
+  width: 10%;
 }
 
 .index {

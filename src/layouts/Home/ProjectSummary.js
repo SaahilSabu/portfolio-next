@@ -91,7 +91,6 @@ export const ProjectSummary = ({
                 style={cssProps({ opacity: 100 })}
                 data-visible={visible}
                 className={styles.ico_prop}
-                width={100}
                 src={src}
                 alt='tech used'
               />
